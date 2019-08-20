@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mukta Mahee', sans-serif;
+}
+
+.logo {
+    width: 9rem;
+    height: 4rem;
+    align-self: center;
+    margin: 1rem;
+}
+
+.banner-img {
+    width: 23rem;
+    height: 10rem;
+    align-self: flex-start;
+    margin-bottom: 2.5rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: none;
+}
+
+nav ul a{
+    display: block;
+    background: #0d1317;
+    padding: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ad343e;
+    transition: color 0.5s ease-out, background 0.5s ease-out, padding 0.5s ease-out ;
+}
+
+nav ul a:hover {
+    background: #474747;
+    color: #e0e0ce;
+    padding-left: 30px;
+}
+
+.nav-container{
+    padding: 10px 30px;
+    background: #474747;
+    border-bottom: 3px solid #ad343e;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    margin: 7px;
+    background: #ad343e;
+}
+
+.btn {
+    padding: 2px;
+    display: inline-block;
+    border:2px solid #ad343e;
+    align-self: center;
+}
+
+header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url(img/cover1.jpg)center/cover fixed no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    flex: 0 0 auto;
+}
+
+.banner {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #ad343e;
+}
+
+.banner h3 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #0d1317;
+}
+
+.and {
+    color: #f3f3f5;
+}
+
+.banner-icons{
+    padding: 20px;
+}
+
+.banner-icons a{
+    display: inline-block;
+    font-size: 30px;
+    background: #474747;
+    padding: 0px 11px;
+    margin: 0 10px;
+    border-radius: 50%;
+    color: #f3f3f5;
+    transition: color 0.2s ease, transform 0.2s ease;
+
+}
+
+.banner-icons a:hover {
+    color: #ad343e;
+    transform: translateY(-10px);
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+@media screen and (min-width: 776px){
+    .nav-container{
+        display: none;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        background: rgba(13,19,23,0.8);
+    }
+
+    nav ul a {
+        background: transparent;
+    }
+
+    nav ul a:hover {
+        background: transparent;
+        padding-left: 20px;;
+    }
+
+
+}
+
+/* Services */
+
+.services {
+    min-height: 80vh;
+    background: url(img/cover2.jpg)center/cover fixed no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.service {
+    color: #f5f4f5;
+    display: flex;
+    margin: 40px;
+}
+
+.service-icon {
+    align-self: center;
+    font-size: 60px;
+    margin-right: 20px;
+    padding: 10px 30px;
+    border: 3px solid #f5f3f5;
+    border-radius: 50%;
+}
+
+.service-text h3 {
+    text-transform: uppercase;
+}
+
+.service-text p {
+    line-height: 2;
+    margin-top: 5px;
+
+} 
+
+@media screen and (min-width:576px){
+    .service-center{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:776px){
+    .service-center{
+        width: 70%;
+    }
+}
+
+/* Projects */
+
+.projects {
+    padding: 0 0 100px 0;
+    background: #f5f3f5;
+
+}
+
+.title h2 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #474747;
+    padding-top: 0px;
+}
+
+.title-underline {
+    background: #ad343e;
+    width: 100px;
+    height: 4px;
+    margin: 10px auto;
+}
+
+.title {
+    padding: 50px 0;
+}
+
+.project {
+    overflow: hidden;
+}
+
+.projects img {
+    width: 100%;
+    display: block;
+    transition: transform 0.4s ease;
+    overflow: hidden;
+}
+
+.projects img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.projects-center {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 2px;
+}
+
+.about {
+    background: url(img/about-background.jpg)center/cover fixed no-repeat;
+    height: 50vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.about-background {
+    width: 28rem;
+    height: 20rem;
+    margin: auto;
+    padding: 20px;
+    background:rgba(255,255,255,0.8);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.about-text h3{
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.about-icon{
+    justify-self: center;
+    font-size: 3rem;
+    
+    color: rgba(13,19,23,0.5)
+}
+
+.about-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.contact {
+    height: 60vh;
+    background: linear-gradient(lightcyan, lightgreen);
+    display: flex;
+}
+
+.contact-form {
+    width: 35rem;
+    min-height: 28rem;
+    margin: auto;
+    background: rgba(255,255,255,0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+
+.contact-form h3 {
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+}
+
+.contact-form input {
+    height: 1.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    width: 300px;
+    max-width: 350px;
+}
+
+.contact-form textarea{
+    font-size: 1.1rem;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-form .message {
+    display: flex;
+}
+
+.contact-form .message label{
+    display: flex;
+    padding-right: 8px;
+}
+
+.contact form button {
+    height: 2.5rem;
+    width: 5rem;
+    font-size: 1.1rem;
+    background: linear-gradient(rgb(245, 81, 5), red);
+    color: #f3f3f5;
+    margin-top: 20px;
+    border: none;
+}
+
+.footer {
+    height: 20vh;
+    text-align: center;
+    background: #474747;
+
+}
+
+.footer p{
+    padding-top: 110px;
+    font-family: 'Mukta Mahee', sans-serif;
+    font-size: 1.4rem;
+    color: white;
+    
+}
+
