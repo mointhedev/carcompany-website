@@ -72,6 +72,8 @@ header {
     flex-direction: column;
 }
 
+
+
 nav {
     flex: 0 0 auto;
 }
@@ -210,7 +212,6 @@ nav {
     text-align: center;
     text-transform: uppercase;
     color: #474747;
-    padding-top: 0px;
 }
 
 .title-underline {
@@ -221,7 +222,7 @@ nav {
 }
 
 .title {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .project {
@@ -362,5 +363,26 @@ nav {
     font-size: 1.4rem;
     color: white;
     
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) { /* STYLES GO HERE */
+    header{
+    background: linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),url(img/cover1.jpg)center/cover no-repeat;
+    }
+
+    .about{
+        min-height: 60vh;
+    }
+
+    .contact {
+        min-height: 80vh;
+    }
+
+    .footer p {
+        padding-top: 70px;
+    }
 }
 
